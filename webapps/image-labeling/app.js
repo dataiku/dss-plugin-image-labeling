@@ -40,7 +40,7 @@ function drawCategories(categories) {
     $('#category-buttons').empty();
     categories.forEach(drawCategory);
     $('#category-buttons button').each((idx, button) => {
-        $(button).click(() => { classify(categories[idx].name)})
+        $(button).click(() => { classify(categories[idx].name); next()})
     });
 }
 
