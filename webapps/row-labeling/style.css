@@ -1,0 +1,79 @@
+@import '/static/public/styles/1.0.0/dku-styles.css';
+
+body {
+    margin: 0;
+}
+#app {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+#fatal-error {
+    margin: 100px auto;
+    text-align: center;
+    color: var(--error-red);
+}
+#data-table {
+    margin: 1em auto;
+    float:left;
+    margin-bottom: 2em;
+}
+td, th {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 0 1em;
+}
+#labeling-inputs {
+    margin: 0 auto;
+    text-align: left;
+}
+#labeling-inputs input {
+    margin-top: -1em;
+    margin-bottom: 1em;
+    width: 95%;
+}
+.input-container {
+    display: inline-block;
+    width: 33%;
+}
+.comment-area {
+    height: 30px;
+    border: 1px solid #000;
+}
+.comment-area:focus {
+    border: 1px solid #3b99fc;
+}
+#buttons {
+    text-align: center;
+    margin: 5px;
+}
+.label-button, .skip-button {
+    margin: 3px 5px;
+    padding: 10px 20px;
+}
+button.label-button, button.skip-button {
+    border-radius: 10;
+    border-color: rgb(216, 216, 216);
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+button>i {
+    opacity: 0.4;
+}
+#done {
+    width: 100%;
+    text-align: center;
+    margin-top: 47vh;
+}
+#done div {
+    font-family: cursive;
+    font-size: 2em;
+}
+#progress {
+    color: grey;
+    font-family: monospace;
+    margin-bottom: 10px;
+}

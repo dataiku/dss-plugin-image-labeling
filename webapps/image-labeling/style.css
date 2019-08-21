@@ -8,7 +8,7 @@ textarea:focus {
     border: 1px solid #3b99fc;
 }
 textarea::-webkit-input-placeholder, textarea::-moz-placeholder, textarea:-ms-input-placeholder {
-    color: #ccc;  
+    color: #ccc;
 }
 
 #app {

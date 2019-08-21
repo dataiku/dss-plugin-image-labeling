@@ -1,0 +1,46 @@
+{
+    "meta": {
+        "label": "Row labeling",
+        "description": "Manually label data rows",
+        "icon": "icon-picture"
+    },
+    "baseType": "STANDARD",
+    "hasBackend": "true",
+    "standardWebAppLibraries" : ["jquery", "dataiku", "bootstrap", "font_awesome"],
+
+    "params": [
+        {
+            "type": "DATASET",
+            "name": "input_dataset",
+            "label":"Input",
+            "description": "Dataset with rows to label",
+            "mandatory": true,
+            "canSelectForeign": false,
+            "canCreateDataset": false
+        },
+        {
+            "type": "DATASET",
+            "name": "labeled_dataset",
+            "label":"Output",
+            "description": "Dataset to save the labels into",
+            "mandatory": true,
+            "canSelectForeign": false,
+            "canCreateDataset": true
+        },
+        {
+            "name": "input_information",
+            "type": "COLUMNS",
+            "label": "Columns to display",
+            "columnRole": "input_dataset",
+            "description": "The columns you want to display to label rows",
+            "mandatory": true
+        },
+        {
+            "name": "output_labels",
+            "type": "STRINGS",
+            "label": "Columns for labels",
+            "description": "",
+            "mandatory": true
+        }
+    ]
+}
